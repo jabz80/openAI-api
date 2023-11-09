@@ -1,0 +1,70 @@
+body {
+    height: 100vh;
+    /* background: linear-gradient(45deg,#fff,#dfc1c1,#eee8e8, #fff);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite; */
+}
+
+ /* @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }  */
+
+  img {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+.chat-box {
+    position: relative;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.chat-text-v {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    background-color: rgb(57, 153, 237);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.chat-text-u {
+    align-self: flex-end;
+    margin-bottom: 10px;
+    background-color: rgb(92, 214, 102);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: none; /* loader is hidden at the start but set to block in script js when making fetch calls */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px; /* Half of the height */
+    margin-left: -25px; /* Half of the width */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.chat-form {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
